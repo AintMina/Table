@@ -1,4 +1,4 @@
-This is an engineering project to build a sisyphus table.
+This is an engineering project to build a sisyphus table like sand kinetic art table.
 
 
 First stage of the project is to build a 2 link planar robotic arm. The arm will have a working area of 360 degrees with a radius of 290 mm.
