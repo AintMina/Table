@@ -18,7 +18,7 @@ r_old = L1 + L2
 arm_down = True
 motor1 = drive(dir_pin=13, step_pin=19, enable_pin=12)
 motor2 = drive(dir_pin=24, step_pin=18, enable_pin=4)
-microsteps = 32
+microsteps = 16
 
 with open('sandify.thr') as f:
 
@@ -57,8 +57,15 @@ with open('sandify.thr') as f:
                     else:
                         dir2 = 'bw'
                     print(step)
-                    motor1.TurnStep(dir1, step[0])
-                    motor2.TurnStep(dir2, step[1])
+
+                    # Moves the motors step by step
+                    if step[0] == step[1]:
+                        for i in range(step[0]):
+                            motor1.TurnStep(dir1, 1, stepdelay=0.001)
+                            motor2.TurnStep(dir2, 1, stepdelay=0.001)
+                    
+                    if step[0] > step[1]:
+                        
 
 motor1.Stop()
 motor2.Stop()
