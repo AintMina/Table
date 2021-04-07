@@ -1,0 +1,37 @@
+CNC pins on Arduino:
+
+13 = Spindle Direction
+12 = Spindle Enable
+11 = Limit Z
+10 = Limit Y
+9 = Limit X
+8 = Stepper Enable
+7 = Direction Z
+6 = Direction Y
+5 = Direction X
+4 = Step Z
+3 = Step Y
+2 = Step X
+
+A3 = Coolant Enable
+A2 = Cycle Start
+A1 = Feed Hold
+A0 = Reset/Abort
+
+Bluetooth module pins:
+
+TX3
+RX3
+
+3.5 V
+GND
+
+SD card module pins:
+
+50 = MISO
+51 = MOSI
+52 = SCK
+53 = CS
+
+5V
+GND
